@@ -1,0 +1,20 @@
+.bg-primary-color{
+    background-color: #407B73;
+}
+.bg-secondary-color{
+    background-color: #A6C8C1;
+}
+.important-color{
+    color:#F48E16;
+}
+.highlight-color{
+    background-color: #D5F5EE;
+}
+
+input:focus{
+    border: 0;
+}
+body{
+    user-select: none;
+    overflow-x: hidden;
+}

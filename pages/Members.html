@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <head>
-    <title>Qwani</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
-    <script src="js/script.js"></script>
-
+    <title>Meet the Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../scripts/css/style.css">
 </head>
 <body>
-
+    <nav class="w-full nav flex flex-col lg:flex-row items-center px-4 py-2 justify-between bg-primary-color text-white">
+        <div class="flex flex-row w-full justify-between">
+            <div class="nav-brand nav-logo">
+                <div class="text-3xl">
+                    QWANI
+                </div>
+            </div>
+            <div class="nav-burger lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class="nav-items hidden lg:inline-flex flex flex-col lg:flex-row lg:space-x-5 items-center">
+                <div class="nav-item">
+                    <a href="Home.html" >Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="Home.html" >About Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="Home.html" >Publication</a>
+                </div>
+                <div class="nav-item">
+                    <a href="Home.html" >Contact Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="Home.html" >Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="Home.html" >Events</a>
+                </div>
+                <div class="nav-search flex-row flex items-center highlight-color rounded space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    <input type="text" name="" id="" class="highlight-color w-28 rounded text-black outline-none bg-transparent" placeholder="Search">
+                    <button class="nav-search-btn text-black bg-secondary-color p-2 rounded-r">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav-items hidden flex flex-col lg:flex-row lg:space-x-5 items-center">
+            <div class="nav-item">
+                <a href="Home.html" >Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="Home.html" >About Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="Home.html" >Publication</a>
+            </div>
+            <div class="nav-item">
+                <a href="Home.html" >Contact Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="Home.html" >Team</a>
+            </div>
+            <div class="nav-item">
+                <a href="Home.html" >Events</a>
+            </div>
+            <div class="nav-search flex-row flex items-center highlight-color rounded space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <input type="text" name="" id="" class="highlight-color w-28 rounded text-black outline-none bg-transparent" placeholder="Search">
+                <button class="nav-search-btn text-black bg-secondary-color p-2 rounded-r">
+                    Search
+                </button>
+            </div>
+        </div>
+    </nav>
     
-    <section>
-        <nav>
-            <div class="logo">
-                <img src="library.jpg">
-            </div>
-            
-            <ul>
-                <li><a href="Home.html" >Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Featured.html">Featured Books</a></li>
-               
-                
-                <li><a href="Members.html">Members</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Reviews.html">Reviews</a></li>
-                <li><a href="Profile.html">Writer's_Profile</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
-            </ul>
-           
-            <div class="social_icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-        </nav>
-
-
-        
-            
-                
+    <section>   
         <br><br><br><br><br><br><h1>Qwani Team</h1>
             <div class="Members">
                
@@ -227,4 +268,6 @@
     
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="../scripts/js/main.js"></script>
 </html>
