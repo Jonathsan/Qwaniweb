@@ -7,14 +7,29 @@
 .important-color{
     color:#F48E16;
 }
+.bg-important-color{
+    background-color:#F48E16;
+}
 .highlight-color{
     background-color: #D5F5EE;
 }
-
+.bg-dark-primary{
+    background-color: #26373E;
+}
+*{
+    user-select: none;
+}
 input:focus{
     border: 0;
 }
 body{
-    user-select: none;
     overflow-x: hidden;
+    color: #26373E;
+}
+.text-hover{
+    transition: all 0.3s ease-in-out;
+}
+.text-hover:hover{
+    font-size: 110%;
+    text-decoration: underline;
 }
