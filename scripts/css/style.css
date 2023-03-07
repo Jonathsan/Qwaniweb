@@ -10,11 +10,14 @@
 .bg-important-color{
     background-color:#F48E16;
 }
-.highlight-color{
+.bg-highlight-color{
     background-color: #D5F5EE;
 }
 .bg-dark-primary{
     background-color: #26373E;
+}
+.text-dark-primary{
+    color: #26373E;
 }
 *{
     user-select: none;
@@ -25,6 +28,7 @@ input:focus{
 body{
     overflow-x: hidden;
     color: #26373E;
+    background-color: #A6C8C1;
 }
 .text-hover{
     transition: all 0.3s ease-in-out;
