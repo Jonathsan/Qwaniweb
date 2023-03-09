@@ -30,6 +30,28 @@ body{
     color: #26373E;
     background-color: #A6C8C1;
 }
+
+/* Change the scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+
 .text-hover{
     transition: all 0.3s ease-in-out;
 }
