@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <head>
-<title>Landing page</title>
+<title>Welcome to Qwani</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../scripts/css/style.css">
+    <link rel="stylesheet" href="scripts/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/site.webmanifest">
 </head>
 <body>
     <nav class="w-full nav flex flex-col lg:flex-row items-center px-4 py-2 justify-between bg-primary-color text-white">
         <div class="flex flex-row w-full justify-between items-center">
-            <div class="nav-brand nav-logo">
-                <a href="#">
-                    <div class="text-4xl font-bold">
-                        QWANI
-                    </div>
-                </a>
+            <div class="nav-brand nav-logo w-1/3">
+                <div class="brand-logo-container w-full">
+                    <a href="#" class="">
+                        <img src="media/logos/qwani-logo.png" class="w-1/2 lg:w-1/4" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="nav-burger lg:hidden ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </div>
-            <div class="nav-items hidden lg:inline-flex flex flex-col lg:flex-row lg:space-x-5 items-center">
-                <div class="nav-item">
+            <div class="nav-item text-xl font-medium text-centers flex flex-row space-x-5 items-center w-auto">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="#" >Home</a>
                 </div>
-                <div class="nav-item">
-                    <a href="/pages/about-page.html" >
+                <div class="nav-item text-xl font-medium text-center">
+                    <a href="pages/about-page.html" >
                         About Us
                     </a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="pages/book-details.html" >Publication</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="pages/contact-us-page.html" >Contact Us</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="pages/qwani-team-page.html" >Team</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="pages/authors-page.html" >Writers</a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item text-xl font-medium text-center">
                     <a href="#" >Events</a>
                 </div>
-                <div class="nav-search flex-row flex items-center bg-highlight-color rounded space-x-2">
+                <div class="nav-search hidden flex-row flex items-center bg-highlight-color rounded space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                     </svg>
@@ -55,244 +55,194 @@
                 </div>
             </div>
         </div>
-        <div class="mobile-nav-items hidden flex flex-col lg:flex-row lg:space-x-5 items-center">
-            <div class="nav-item">
-                <a href="#" >Home</a>
-            </div>
-            <div class="nav-item">
-                <a href="/pages/about-page.html" >
-                    About Us
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="pages/book-details.html" >Publication</a>
-            </div>
-            <div class="nav-item">
-                <a href="pages/contact-us-page.html" >Contact Us</a>
-            </div>
-            <div class="nav-item">
-                <a href="pages/qwani-team-page.html" >Team</a>
-            </div>
-            <div class="nav-item">
-                <a href="pages/authors-page.html" >Writers</a>
-            </div>
-            <div class="nav-item">
-                <a href="#" >Events</a>
-            </div>
-            <div class="nav-search flex-row flex items-center bg-highlight-color rounded space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>
-                <input type="text" name="" id="" class="bg-highlight-color w-28 rounded text-black outline-none bg-transparent" placeholder="Search">
-                <button class="nav-search-btn text-black bg-secondary-color p-2 rounded-r">
-                    Search
-                </button>
-            </div>
-        </div>
     </nav>
 
-    <section>   
-
-<!--landing page-->
-<main style="background-color: #A6C8C1;">
-    <style>
-        .uppermain{
-            display: flex;
-            justify-content: space-around;
-            margin-left: 0px;
-        }
-        .uppermain p span{
-            font-weight: bolder;
-            text-align: center;
-            font-size: 50px;
-        }
-        .uppermain p button{
-            display: flexbox;
-            background-color: #F48E16;
-            text-align: center;
-            color:#fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-  
-        }
-        .container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: wrap;
-			max-width: 1000px;
-			margin: 0 auto;
-			padding: 50px 0;
-		}
-		.box {
-			flex-basis: 25%;
-			padding: 30px;
-			margin-bottom: 30px;
-			background-color: #407B73;
-			border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-			text-align: center;
-			position: relative;
-            
-		}
-		.box h3 {
-			margin-top: 0;
-            color: whitesmoke;
-            font-size: 30px;
-            margin-bottom: 30px;
-		}
-		.box img {
-			position: absolute;
-			top: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			height: 100px;
-           
-		}
-
-        
-
-
-        
-    </style>
-    <!-- Main content goes here -->
-    
-    <div class="uppermain">
-      
-    <p> <br>
-        <span>QWANI TRUST</span><br>
-        Qwani is a youth lead initiative created as a platform 
-        for young talented writers.<br> We are writers' forum that
-        tries to expose people to<br> the beauty in the diverse
-        forms of writing from young<br> fresh minds. As Qwani,
-        we believe in diversity; thus,<br> we use our platform
-        to showcase writing in the many<br> forms it takes,
-        from short stories and poems to<br> plays and philosophy,
-        along with semblances of different<br> languages; we
-        try to allow all forms of<br> writters to show their
-        knowledge in the specific<br> fields. We aim to inform,
-        entertain, evoke emotion, <br>and most importantly, expose;
-        the world to great writers and <br>amazing writers to the world.<br><br>
-        <button type="submit">Get Book</button>
-    </p>
-                  <img src="../Featured1.jpeg">
-                  <img src="../Featured1.jpeg">
-                </div><br><br>
-                <div class="container">
-                    <div class="box">
-                        <img src="mission.png"><br><br><br>
-                        <h3><br>Mission</h3>
-                        <p> To promote literature among young people.
-</p>
+    <section class="hero main-body px-8 lg:p-4 w-full">
+        <!-- Hero section with the featured content -->
+        <div class="flex items-center justify-center">
+            <div class="hero-section w-full lg:w-11/12 flex flex-col-reverse lg:flex-row my-6 lg:my-14 lg:space-x-10">
+                <div class="hero-section-details flex flex-col w-full my-10 lg:my-0 lg:w-5/12 justify-center">
+                    <div class="title text-5xl lg:text-6xl font-bold">
+                        QWANI TRUST
                     </div>
-                    <div class="box">
-                        <img src="diamond.png"><br><br><br><br>
-                        <h3>Vision</h3>
-                        <p> Curabitur auctor bibendum augue,<br> quis sollicitudin arcu. Sed a nibh justo.<br> Donec dignissim, risus sed rhoncus bibendum,</p>
-                    </div>
-                    <div class="box">
-                        <img src="target2.png">
-
-                        <h3><br><br><br>Goal</h3>
-                        <p> To have as many young writers published as possible.<br>
-                            </p>
-                    </div>
-                </div>
-
-</main>
-
-<div class="footer-container bg-primary-color text-white px-4 py-6 w-full">
-    <footer class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 w-full items-start h-full items-center lg:items-start">
-        <div class="footer-section-brand items-center w-2/3 lg:w-1/4 flex flex-col h-full space-y-3 lg:space-y-4">
-            <div class="footer-logo">
-                <span class="text-[3.5rem]">
-                    QWANI
-                </span>
-            </div>
-            <div class="footer-section-body flex flex-col items-center">
-                <span>
-                    QWANI TRUST
-                </span>
-                <span class="text-sm">
-                    All Rights reserved 2023
-                </span>
-            </div>
-            <div class="footer-section-footer flex flex-row space-x-10 my-4">
-                <div class="member-social-icon">
-                    <img src="../media/social-media-icons/instagram.png" class="w-8" alt="">
-                </div>
-                <div class="member-social-icon">
-                    <img src="../media/social-media-icons/twitter.png" class="w-8" alt="">
-                </div>
-                <div class="member-social-icon">
-                    <img src="../media/social-media-icons/gmail.png" class="w-8" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="footer-section-support w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
-            <div class="footer-section-title">
-                <span class="text-2xl font-medium">
-                    Support
-                </span>
-            </div>
-            <div class="footer-section-body">
-                <div class="footer-section-links">
-                    <a href="">Contact Us</a>
-                </div>
-                <div class="footer-section-links">
-                    <a href="">About Us</a>
-                </div>
-                <div class="footer-section-links">
-                    <a href="">FAQs</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-section-company w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
-            <div class="footer-section-title">
-                <span class="text-2xl font-medium">
-                    Qwani Trust
-                </span>
-            </div>
-            <div class="footer-section-body">
-                <div class="footer-section-links">
-                    <a href="">Team</a>
-                </div>
-                <div class="footer-section-links">
-                    <a href="">Writers</a>
-                </div>
-                <div class="footer-section-links">
-                    <a href="">Events</a>
-                </div>
-                <div class="footer-section-links">
-                    <a href="">Publications</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-section-subscribe w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
-            <div class="footer-section-title">
-                <span class="flex flex-row items-center w-full space-x-2">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="text-base">
-                            Stay up to date with Qwani
+                    <div class="hero-content my-6 text-3xl lg:text-xl text-justify">
+                        <span>
+                            Qwani is a youth lead initiative created as a platform 
+                            for young talented writers. We are writers' forum that
+                            tries to expose people to the beauty in the diverse
+                            forms of writing from young fresh minds. As Qwani,
+                            we believe in diversity; thus, we use our platform
+                            to showcase writing in the many forms it takes,
+                            from short stories and poems to plays and philosophy,
+                            along with semblances of different languages; we
+                            try to allow all forms of writters to show their
+                            knowledge in the specific fields. We aim to inform,
+                            entertain, evoke emotion, and most importantly, expose;
+                            the world to great writers and amazing writers to the world.
                         </span>
                     </div>
-                </span>
-            </div>
-            <div class="footer-section-body flex flex-col space-y-3 w-full items-center lg:items-start">
-                <div class="footer-section-input">
-                    <input type="email" name="subscribe" id="subscribe" class="w-full outline-none focus:outline-white focus:outline-offset-2 p-2 bg-transparent border-b-2 placeholder:text-white text-white" placeholder="Enter your email address">
+                    <div class="hero-cta">
+                        <button class="p-2 bg-important-color rounded text-3xl lg:text-2xl text-center items-center w-1/3  text-white">
+                            Get Book
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <button class="subscribe-btn bg-important-color p-2 rounded-lg">
-                        Subscribe
-                    </button>
+                <div class="hero-section-gallery w-full lg:w-7/12 flex lg:space-x-4">
+                    <div class="book-front-cover">
+                        <img src="media/book-images/book-cover-whole.png" class="w-full" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals, Vision and Mission Statements -->
+        <div class="prospects my-10 flex flex-row w-full justify-around items-center">
+            <div class="prospect-card bg-primary-color w-1/4 lg:w-1/6 h-full flex flex-col items-center rounded-lg p-6">
+                <div class="prospect-hero-image w-full flex justify-center">
+                    <img src="media/page-media/index-page-media/mission.png" class="w-1/2" alt="">
+                </div>
+                <div class="prospect-body mt-6 flex flex-col justify-center">
+                    <div class="prospect-title text-center">
+                        <span class="text-white text-4xl font-bold">
+                            Mission
+                        </span>
+                    </div>
+                    <div class="prospect-body mt-2 text-center">
+                        <span class="text-white text-xl lg:text-lg">
+                            To promote literature among young people.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="prospect-card bg-primary-color w-1/4 lg:w-1/6 h-full flex flex-col items-center rounded-lg p-6">
+                <div class="prospect-hero-image w-full flex justify-center">
+                    <img src="media/page-media/index-page-media/diamond.png" class="w-1/2" alt="">
+                </div>
+                <div class="prospect-body mt-6 flex flex-col justify-center">
+                    <div class="prospect-title text-center">
+                        <span class="text-white text-4xl font-bold">
+                            Vision
+                        </span>
+                    </div>
+                    <div class="prospect-body mt-2 text-center">
+                        <span class="text-white text-xl lg:text-lg">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur inventore tempore sequi quidem atque. 
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="prospect-card bg-primary-color w-1/4 lg:w-1/6 flex h-full flex-col items-center rounded-lg p-6">
+                <div class="prospect-hero-image w-full flex justify-center">
+                    <img src="media/page-media/index-page-media/target.png" class="w-1/2" alt="">
+                </div>
+                <div class="prospect-body mt-6 flex flex-col justify-center">
+                    <div class="prospect-title text-center">
+                        <span class="text-white text-4xl font-bold">
+                            Mission
+                        </span>
+                    </div>
+                    <div class="prospect-body mt-2 text-center">
+                        <span class="text-white text-xl lg:text-lg">
+                            To have as many young writers published as possible.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="footer-container bg-primary-color text-white px-4 py-6 w-full">
+    <footer class="flex flex-col lg:flex-row lg:justify-between space-y-10 lg:space-y-0 w-full items-start h-full items-center lg:items-start">
+        <div class="footer-group flex flex-row items-center justify-around w-full">
+            <div class="footer-section-brand items-center w-2/3 lg:w-1/4 flex flex-col h-full space-y-3 lg:space-y-4">
+                <div class="footer-logo flex justify-center">
+                    <img src="media/logos/qwani-logo.png" class="w-5/6" alt="">
+                </div>
+                <div class="footer-section-body flex flex-col items-center">
+                    <span>
+                        QWANI TRUST
+                    </span>
+                    <span class="text-sm">
+                        All Rights reserved 2023
+                    </span>
+                </div>
+                <div class="footer-section-footer flex flex-row space-x-10 my-4">
+                    <div class="member-social-icon">
+                        <img src="media/social-media-icons/instagram.png" class="w-8" alt="">
+                    </div>
+                    <div class="member-social-icon">
+                        <img src="media/social-media-icons/twitter.png" class="w-8" alt="">
+                    </div>
+                    <div class="member-social-icon">
+                        <img src="media/social-media-icons/gmail.png" class="w-8" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section-subscribe w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
+                <div class="footer-section-title">
+                    <span class="flex flex-row items-center w-full space-x-2">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-base">
+                                Stay up to date with Qwani
+                            </span>
+                        </div>
+                    </span>
+                </div>
+                <div class="footer-section-body flex flex-col space-y-3 w-full items-center lg:items-start">
+                    <div class="footer-section-input">
+                        <input type="email" name="subscribe" id="subscribe" class="w-full outline-none focus:outline-white focus:outline-offset-2 p-2 bg-transparent border-b-2 placeholder:text-white text-white" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <button class="subscribe-btn bg-important-color p-2 rounded-lg">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-group flex flex-row items-center justify-around w-full">
+            <div class="footer-section-company w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
+                <div class="footer-section-title">
+                    <span class="text-2xl font-medium">
+                        Qwani Trust
+                    </span>
+                </div>
+                <div class="footer-section-body">
+                    <div class="footer-section-links text-lg">
+                        <a href="">Team</a>
+                    </div>
+                    <div class="footer-section-links text-lg">
+                        <a href="">Writers</a>
+                    </div>
+                    <div class="footer-section-links text-lg">
+                        <a href="">Events</a>
+                    </div>
+                    <div class="footer-section-links text-lg">
+                        <a href="">Publications</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section-support w-2/3 lg:w-1/4 flex flex-col h-5/6 space-y-3 lg:space-y-4 items-center lg:items-start">
+                <div class="footer-section-title">
+                    <span class="text-2xl font-medium">
+                        Support
+                    </span>
+                </div>
+                <div class="footer-section-body">
+                    <div class="footer-section-links text-lg">
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="footer-section-links text-lg">
+                        <a href="">About Us</a>
+                    </div>
+                    <div class="footer-section-links text-lg">
+                        <a href="">FAQs</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,7 +257,7 @@
     // Navbar code
     //? Toggle burger menu items
     $('.nav-burger').click(()=>{
-        $('.mobile-nav-items').toggleClass('hidden');
+        $('.mobile-nav-item text-xl font-medium text-centers').toggleClass('hidden');
     });
 });
 </script>

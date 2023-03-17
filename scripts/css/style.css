@@ -2,7 +2,7 @@
     background-color: #407B73;
 }
 .bg-secondary-color{
-    background-color: #A6C8C1;
+    background-color: #95b4ae;
 }
 .important-color{
     color:#F48E16;
@@ -11,7 +11,7 @@
     background-color:#F48E16;
 }
 .bg-highlight-color{
-    background-color: #D5F5EE;
+    background-color: #b3d6cf;
 }
 .bg-dark-primary{
     background-color: #26373E;
@@ -28,7 +28,7 @@ input:focus{
 body{
     overflow-x: hidden;
     color: #26373E;
-    background-color: #A6C8C1;
+    background-color: #8fb1aa;
 }
 
 /* Change the scrollbar */
