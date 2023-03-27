@@ -30,7 +30,12 @@ body{
     color: #26373E;
     background-color: #8fb1aa;
 }
-
+.placeholder\:text-dark-primary{
+    color: #407B73;
+}
+.text-primary-dark{
+    color: #407B73;
+}
 /* Change the scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
