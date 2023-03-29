@@ -48,7 +48,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                     </svg>
-                    <input type="text" name="" id="" class="bg-highlight-color w-28 rounded text-black outline-none bg-transparent" placeholder="Search">
+                    <input type="text" name="" id="" class="bg-highlight-color w-28 rounded text-black outline-none bg-transparent" required placeholder="Search">
                     <button class="nav-search-btn text-black bg-secondary-color p-2 rounded-r">
                         Search
                     </button>
@@ -146,7 +146,7 @@
                                         </span>
                                     </div>
                                     <div class="form-input w-full my-2">
-                                        <input type="text" placeholder="First Name" name="fName" class="w-full lg:w-11/12 p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
+                                        <input type="text" required placeholder="First Name" name="fName" class="w-full lg:w-11/12 p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
                                     </div>
                                 </div>
                                 <div class="form-group flex flex-col w-full">
@@ -156,7 +156,7 @@
                                         </span>
                                     </div>
                                     <div class="form-input w-full my-2">
-                                        <input type="text" placeholder="Last Name" name="lName" class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
+                                        <input type="text" required placeholder="Last Name" name="lName" class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@
                                         </span>
                                     </div>
                                     <div class="form-input w-full my-2">
-                                        <input type="text" placeholder="+254712345678" name="0712345678" class="w-full lg:w-11/12 p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
+                                        <input type="text" required placeholder="+254712345678" name="0712345678" class="w-full lg:w-11/12 p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
                                     </div>
                                 </div>
                                 <div class="form-group flex flex-col w-full">
@@ -178,7 +178,7 @@
                                         </span>
                                     </div>
                                     <div class="form-input w-full my-2">
-                                        <input type="text" placeholder="someone@gmail.com" name="email" autocomplete="off"  class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
+                                        <input type="text" required placeholder="someone@gmail.com" name="email" autocomplete="off"  class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                     </span>
                                 </div>
                                 <div class="form-input w-full my-2">
-                                    <input type="text" placeholder="Your inquiry" name="subject" class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
+                                    <input type="text" required placeholder="Your inquiry" name="subject" class="w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none">
                                 </div>
                             </div>
                             <div class="form-group flex flex-col w-full my-4">
@@ -199,7 +199,7 @@
                                     </span>
                                 </div>
                                 <div class="form-input w-full my-2">
-                                    <textarea placeholder="Your Message" name="message" autocomplete="off" class="resize-none h-40 w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none"></textarea>
+                                    <textarea required placeholder="Your Message" name="message" autocomplete="off" class="resize-none h-40 w-full p-4 lg:p-3 placeholder:text-3xl lg:placeholder:text-base rounded-lg bg-highlight-color outline-none"></textarea>
                                 </div>
                             </div>
                             <div class="w-full flex justify-center">
@@ -216,7 +216,9 @@
             <div class="footer-group flex flex-row items-center justify-around w-full">
                 <div class="footer-section-brand items-center w-2/3 lg:w-1/4 flex flex-col h-full space-y-3 lg:space-y-4">
                     <div class="footer-logo flex justify-center">
-                        <img src="../media/logos/qwani-logo.png" class="w-5/6" alt="">
+                        <a href="../index.html" class="footer-logo flex justify-center">
+                            <img src="../media/logos/qwani-logo.png" class="w-5/6" alt="">
+                        </a>
                     </div>
                     <div class="footer-section-body flex flex-col items-center">
                         <span>
@@ -228,13 +230,19 @@
                     </div>
                     <div class="footer-section-footer flex flex-row space-x-10 my-4">
                         <div class="member-social-icon">
-                            <img src="../media/social-media-icons/instagram.png" class="w-8" alt="">
+                            <a href="https://www.instagram.com/qwanibok/">
+                                <img src="../media/social-media-icons/instagram.png" class="w-8" alt="">
+                            </a>
                         </div>
                         <div class="member-social-icon">
-                            <img src="../media/social-media-icons/twitter.png" class="w-8" alt="">
+                            <a href="https://twitter.com/qwanibok">
+                                <img src="../media/social-media-icons/twitter.png" class="w-8" alt="">
+                            </a>
                         </div>
                         <div class="member-social-icon">
-                            <img src="../media/social-media-icons/gmail.png" class="w-8" alt="">
+                            <a href="mailto:qwanitrust@gmail.com">
+                                <img src="../media/social-media-icons/gmail.png" class="w-8" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +263,7 @@
                     </div>
                     <div class="footer-section-body flex flex-col space-y-3 w-full items-center lg:items-start">
                         <div class="footer-section-input">
-                            <input type="email" name="subscribe" id="subscribe" class="w-full outline-none focus:outline-white focus:outline-offset-2 p-2 bg-transparent border-b-2 placeholder:text-white text-white" placeholder="Enter your email address">
+                            <input type="email" name="subscribe" id="subscribe" class="w-full outline-none focus:outline-white focus:outline-offset-2 p-2 bg-transparent border-b-2 placeholder:text-white text-white" required placeholder="Enter your email address">
                         </div>
                         <div>
                             <button class="subscribe-btn bg-important-color p-2 rounded-lg">
