@@ -16,7 +16,7 @@
             <div class="nav-brand nav-logo w-1/3">
                 <div class="brand-logo-container w-full">
                     <a href="../index.html" class="">
-                        <img src="../media/logos/qwani-logo.png" class="w-1/2 lg:w-1/4" alt="">
+                        <img src="../media/logo/qwani-logo.png" class="w-1/2 lg:w-1/4" alt="">
                     </a>
                 </div>
             </div>
@@ -44,6 +44,9 @@
                 <div class="nav-item text-xl font-medium text-center">
                     <a href="events-page.html" >Events</a>
                 </div>
+                <div class="nav-item text-xl font-medium text-center">
+                    <a href="#" >Blog</a>
+                </div>
                 <div class="nav-search hidden flex-row flex items-center bg-highlight-color rounded space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-2 w-6 h-6 text-gray-400">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -57,14 +60,89 @@
         </div>
     </nav>
     
-    <section class="hero px-4 py-4 w-full px-40">   
-        <div class="hero-heading my-8">
-            <span class="text-6xl font-bold">
-                Welcome to our blog
-            </span>
-        </div>
+    <section class="hero px-20 py-10 w-full lg:px-40 overflow-y-auto">  
         <div class="hero-body">
-            
+            <div class="genre-bar-container flex flex-row justify-around">
+                <div class="genre-capsule flex flex-col items-center justify-center w-[120px] h-[120px] p-2 bg-white rounded-full">
+                    <div class="genre-icon-container w-full flex justify-center items-center">
+                        <img src="../media/icons/romance.png" class="w-2/3" alt="genre icon" class="genre-icon">
+                    </div>
+                    <div class="genre-title px-4">
+                        <span class="text-base font-medium uppercase">
+                            Romance
+                        </span>
+                    </div>
+                </div>
+                <div class="genre-capsule flex flex-col items-center justify-center w-[120px] h-[120px] p-2 bg-white rounded-full">
+                    <div class="genre-icon-container w-full flex justify-center items-center">
+                        <img src="../media/icons/science.png" class="w-2/3" alt="genre icon" class="genre-icon">
+                    </div>
+                    <div class="genre-title px-4">
+                        <span class="text-base font-medium uppercase">
+                            Science
+                        </span>
+                    </div>
+                </div>
+                <div class="genre-capsule flex flex-col items-center justify-center w-[120px] h-[120px] p-2 bg-white rounded-full">
+                    <div class="genre-icon-container w-full flex justify-center items-center">
+                        <img src="../media/icons/art.png" class="w-2/3" alt="genre icon" class="genre-icon">
+                    </div>
+                    <div class="genre-title px-4">
+                        <span class="text-base font-medium uppercase">
+                            Art
+                        </span>
+                    </div>
+                </div>
+                <div class="genre-capsule flex flex-col items-center justify-center w-[120px] h-[120px] p-2 bg-white rounded-full">
+                    <div class="genre-icon-container w-full flex justify-center items-center">
+                        <img src="../media/icons/biography.png" class="w-2/3" alt="genre icon" class="genre-icon">
+                    </div>
+                    <div class="genre-title px-4">
+                        <span class="text-base/6 font-medium uppercase">
+                            Philosophy
+                        </span>
+                    </div>
+                </div>
+                <div class="genre-capsule flex flex-col items-center justify-center w-[120px] h-[120px] p-2 bg-white rounded-full">
+                    <div class="genre-icon-container w-full flex justify-center items-center">
+                        <img src="../media/icons/crime.png" class="w-2/3" alt="genre icon" class="genre-icon">
+                    </div>
+                    <div class="genre-title px-4">
+                        <span class="text-base font-medium uppercase">
+                            Crime
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-main-container">
+                <div class="blog-main-container-heading my-8">
+                    <span class="text-5xl font-bold">
+                        Latest posts
+                    </span>
+                </div>
+                <div class="flex flex-row bg-primary-color h-60 rounded-xl w-full">
+                    <div class="flex flex-col justify-around px-4 py-2 w-7/12">
+                        <div class="blog-post-title">
+                            <span class="text-3xl font-medium text-white">
+                                Science Moto Moto
+                            </span>
+                        </div>
+                        <div class="blog-post-body-sample text-justify">
+                            <p class="text-white text-lg">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex maxime dolorem placeat expedita vitae quibusdam illo earum, magni reiciendis corporis, voluptatem provident odit omnis, neque quasi. Impedit neque officiis obcaecati.
+                            </p>
+                        </div>
+                        <div class="blog-post-genres">
+                            <span class="italic text-base text-white">
+                                Science, Philosophy
+                            </span>
+                        </div>
+                    </div>
+                    <div class="blog-post-image w-5/12 overflow-hidden">
+                        <img src="../media/page-media/blog/science-bg.png" class="w-full" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <div class="footer-container bg-primary-color text-white px-4 py-6 w-full">
@@ -73,7 +151,7 @@
                 <div class="footer-section-brand items-center w-2/3 lg:w-1/4 flex flex-col h-full space-y-3 lg:space-y-4">
                     <div class="footer-logo flex justify-center">
                         <a href="../index.html" class="footer-logo flex justify-center">
-                            <img src="../media/logos/qwani-logo.png" class="w-5/6" alt="">
+                            <img src="../media/logo/qwani-logo.png" class="w-5/6" alt="">
                         </a>
                     </div>
                     <div class="footer-section-body flex flex-col items-center">
