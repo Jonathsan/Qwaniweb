@@ -56,6 +56,11 @@ background: #888;
 background: #555;
 }
 
+.selected-dashlink{
+    background-color: #26373E;
+    color:white;
+}
+
 
 .text-hover{
     transition: all 0.3s ease-in-out;
