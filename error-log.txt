@@ -1,0 +1,3 @@
+Blog Genre Error - [2023-05-28 19:18:15] - File is not an image.
+Blog Post Error - [2023-05-28 19:18:45] - File is not an image.
+Blog Post Error - [2023-05-28 19:18:45] - Sorry, your file is too large.

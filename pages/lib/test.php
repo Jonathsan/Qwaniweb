@@ -1,33 +1,22 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "qwani";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once '../config/database.php';
+require_once '../lib/helpers.php';
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+session_start();
 
-// prepare and bind
-$stmt = $conn->prepare("INSERT INTO tlb_test(test_name) VALUES(?)");
-$stmt->bind_param("s", $test_name);
+// createAdminUser($conn, 'QwaniAdmin', 'qwanitrust@gmail.com', 'qw@nitrust2023.');
 
-// set parameters and execute
-$test_name = "Test no. 1";
-$stmt->execute();
+// echo $_SESSION['success'];
+// unset($_SESSION['success']);
 
-$test_name = "Test no. 2";
-$stmt->execute();
 
-$test_name = "Test no. 3";
-$stmt->execute();
+createBlogPost($conn,'Science Moto Moto','Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia praesentium, cum, possimus iste ad tenetur porro quos adipisci cupiditate tempore delectus ea magnam reprehenderit quibusdam eaque veniam soluta quod.', 5, "Science Moto Moto.png");
 
-echo "New records created successfully";
-
-$stmt->close();
-$conn->close();
+echo $_SESSION['success'];
+unset($_SESSION['success']);
 ?> 
+
+
