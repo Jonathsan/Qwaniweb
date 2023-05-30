@@ -19,54 +19,73 @@ if (isset($_POST["create-blog-post-btn"])) {
     $blogPostMedia = $_FILES["blog-post-media"];
     $blogPostGenre = $_POST["blog-post-genre"];
 
-    $targetDir = "../../media/uploads/blog-media/";
-    $targetFile = $targetDir . $blogPostTitle . '.' . pathinfo($blogPostMedia["name"], PATHINFO_EXTENSION);
-    $newFileName = $blogPostTitle . '.' . pathinfo($blogPostMedia["name"], PATHINFO_EXTENSION);
+    if (empty($blogPostMedia["name"])) {
+        // File is empty
+        $_SESSION['success'] = "Blog post has been added successfully";
+        createBlogPost($conn,$blogPostTitle,$blogPostBody,$blogPostGenre, NULL);
+    } 
+    
+    elseif ($blogPostMedia["size"] == 0) {
+        // File has a size of zero
+        $_SESSION['fail'] = "Sorry, there was an error uploading the media";
+        logError($zeroSizeFile, $blogPostError);
+    } 
+    
+    elseif ($blogPostMedia["error"] !== UPLOAD_ERR_OK) {
+        $_SESSION['fail'] = "Sorry, there was an error uploading the media";
+        logError($blogPostMedia["error"], $arbitraryError);
+    } 
+    
+    else {
+        $targetDir = "../../media/uploads/blog-media/";
+        $targetFile = $targetDir . $blogPostTitle . '.' . pathinfo($blogPostMedia["name"], PATHINFO_EXTENSION);
+        $newFileName = $blogPostTitle . '.' . pathinfo($blogPostMedia["name"], PATHINFO_EXTENSION);
 
-    $uploadOk = 1;
+        $uploadOk = 1;
 
-    // Check if image file is a valid image
-    $check = getimagesize($blogPostMedia["tmp_name"]);
-    if ($check === false) {
-        $_SESSION['fail'] = "File is not an image.";
+        // Check if image file is a valid image
+        $check = getimagesize($blogPostMedia["tmp_name"]);
+        if ($check === false) {
+            $_SESSION['fail'] = "File is not an image.";
 
-        logError($notImage, $blogPostError);
-        $uploadOk = 0;
-    }
+            logError($notImage, $blogPostError);
+            $uploadOk = 0;
+        }
 
-    // Check if file already exists
-    if (file_exists($targetFile)) {
-        $_SESSION['fail'] = "Sorry, file already exists.";
+        // Check if file already exists
+        if (file_exists($targetFile)) {
+            $_SESSION['fail'] = "Sorry, file already exists.";
 
-        logError($alreadyExists, $blogPostError);
-        $uploadOk = 0;
-    }
+            logError($alreadyExists, $blogPostError);
+            $uploadOk = 0;
+        }
 
-    // Check file size
-    if ($blogPostMedia["size"] > 500000) {
-        $_SESSION['fail'] = "Sorry, your file is too large.";
+        // Check file size
+        if ($blogPostMedia["size"] > 500000) {
+            $_SESSION['fail'] = "Sorry, your file is too large.";
 
-        logError($fileTooLarge, $blogPostError);
-        $uploadOk = 0;
-    }
-    // Check if $uploadOk is set to 0 by an error
-    if ($uploadOk === 0) {
-        $_SESSION['fail'] = "Sorry, your file was not uploaded.";
-    } else {
-        if (move_uploaded_file($blogPostMedia["tmp_name"], $targetFile)) {
-            // Create new genre in the DB
-            createBlogPost($conn,$blogPostTitle,$blogPostBody,$blogPostGenre, $newFileName);
-
-            $_SESSION['success'] = "Blog post has been added successfully";
-
-            echo $_SESSION['success'];
+            logError($fileTooLarge, $blogPostError);
+            $uploadOk = 0;
+        }
+        
+        // Check if $uploadOk is set to 0 by an error
+        if ($uploadOk === 0) {
+            $_SESSION['fail'] = "Sorry, your file was not uploaded.";
         } else {
-            $_SESSION['fail'] = "Sorry, there was an error creating the blog post";
+            if (move_uploaded_file($blogPostMedia["tmp_name"], $targetFile)) {
+                // Create new genre in the DB
+                createBlogPost($conn,$blogPostTitle,$blogPostBody,$blogPostGenre, $newFileName);
 
-            logError($fileUploadFailed." - ". error_get_last(), $blogPostError);
+                $_SESSION['success'] = "Blog post has been added successfully";
+
+                echo $_SESSION['success'];
+            } else {
+                $_SESSION['fail'] = "Sorry, there was an error creating the blog post";
+
+                logError($fileUploadFailed." - ". error_get_last(), $blogPostError);
+            }
         }
     }
-
     header("Location: create-blog-post.php");
 }
 
